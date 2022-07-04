@@ -19,6 +19,7 @@ body {
   padding: 0;
   min-height: 100%;
   max-width: 100%;
+  padding-bottom: 8rem;
 }
 
 *,
@@ -31,7 +32,21 @@ img,
 video {
   width: 100%;
   height: auto;
-  display: black;
+  display: block;
+}
+
+/* Nav Bar Styles */
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 100;
+  height: 6rem;
 }
 
 /* Hero Styles */
