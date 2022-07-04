@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>My Portfolio</title>
   </head>
   <body>
     <!-- Begin Hero Header -->
     <header class="hero-box">
       <section class="hero-image-box">
-        <!--<img
-          class="hero-image"
-          src="img/beach.jpg"
-          alt="the best office space"
-        />-->
         <video
           class="hero-video"
           src="video/beach.mp4"
@@ -29,8 +25,82 @@
         <p class="hero-text">
           Mila can be one of the most annoying things on the planet.
         </p>
+        <p>
+            <a href="#portfolio">
+                <button type="button" class="hero-button">View Portfolio</button>
+            </a>
+        </p>
       </section>
     </header>
     <!-- End Hero Header -->
+
+    <!-- Begin Portfolio -->
+    <section id="portfolio" class="portfolio-container">
+      <h1>Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a href="img/singapore.jpg" class="glightbox">
+            <img src="img/singapore.jpg" alt="Singapore" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+            <a href="img/tokyo.jpg" class="glightbox" data-glitebox="title: Tokyo; description: this is Tokyo">
+              <img src="img/tokyo.jpg" alt="Tokyo" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/software.jpg" class="glightbox">
+              <img src="img/software.jpg" alt="software" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/rice.jpg" class="glightbox">
+              <img src="img/rice.jpg" alt="rice" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/programming.jpg" class="glightbox">
+              <img src="img/programming.jpg" alt="programming" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/parrot.jpg" class="glightbox">
+              <img src="img/parrot.jpg" alt="parrot" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/island.jpg" class="glightbox">
+              <img src="img/island.jpg" alt="island" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/hyena.jpg" class="glightbox">
+              <img src="img/hyena.jpg" alt="hyena" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/golf.jpg" class="glightbox">
+              <img src="img/golf.jpg" alt="golf" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/creepy.jpg" class="glightbox">
+              <img src="img/creepy.jpg" alt="creepy" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/corgi.jpg" class="glightbox">
+              <img src="img/corgi.jpg" alt="corgi" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/cat.jpg" class="glightbox">
+              <img src="img/cat.jpg" alt="cat" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/buddha.jpg" class="glightbox">
+              <img src="img/buddha.jpg" alt="buddha" class="gallery-img"/>
+          </div>
+          <div class="gallery-item">
+            <a href="img/barcelona.jpg" class="glightbox">
+              <img src="img/barcelona.jpg" alt="barcelona" class="gallery-img"/>
+          </div>
+      </section>
+    </section>
+
+    <!-- End Portfolio -->
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
